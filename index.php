@@ -4,4 +4,5 @@ header("Access-Control-Allow-Credentials:true");
 $username=array('username'=>123);
 echo json_encode($username);
 
+
 ?>
