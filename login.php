@@ -1,4 +1,5 @@
 <?php
+session_start();
 header("Access-Control-Allow-Origin:http://10.30.29.76:63341");
 header("Access-Control-Allow-Credentials:true");
 header("Access-Control-Allow-Headers:Content_Type");
@@ -9,7 +10,7 @@ $message=array('message'=>"success");
 
 
 if($data->userName==123&&$data->passWord==123){
-    session_start();
+
     $_SESSION['name']=$data->userName;
     echo json_encode($message);
 }else{
