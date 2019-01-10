@@ -8,5 +8,5 @@ header("Content_Type:text/json");
 $_SESSION['name']=null;
 $message=array('message'=>'success');
 echo json_encode($message);
-
+session_destroy();
 ?>
