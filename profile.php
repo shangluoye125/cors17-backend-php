@@ -6,5 +6,5 @@ header("Access-Control-Allow-Credentials:true");
 
 $data=array('message'=>'success');
 echo json_encode($message);
-session_destroy();
+
 ?>
